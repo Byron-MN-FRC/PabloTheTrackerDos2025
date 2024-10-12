@@ -15,7 +15,7 @@ Children:
             name: CAN ID
             validators: &id002 [CANID]
             value: '7'
-        Base: Talon SRX
+        Base: Talon FX
         Name: right
       - Children: []
         Properties:
@@ -25,7 +25,7 @@ Children:
             name: CAN ID
             validators: *id002
             value: '5'
-        Base: Talon SRX
+        Base: Talon FX
         Name: left
       Properties:
         Right Motor: !!robotbuilder.data.properties.ChildSelectionProperty
@@ -33,7 +33,7 @@ Children:
           name: Right Motor
           type: PIDOutput
           validators: [RobotDrive2, ChildDropdownSelected]
-          value: right
+          value: left
         Maximum Output: !!robotbuilder.data.properties.DoubleProperty {default: 1,
           name: Maximum Output, validators: null, value: 1.0}
         Left Motor: !!robotbuilder.data.properties.ChildSelectionProperty
@@ -41,7 +41,7 @@ Children:
           name: Left Motor
           type: PIDOutput
           validators: [RobotDrive2, ChildDropdownSelected]
-          value: left
+          value: right
         Safety Expiration Time: !!robotbuilder.data.properties.DoubleProperty {default: 0.1,
           name: Safety Expiration Time, validators: null, value: 0.1}
         Safety Enabled: !!robotbuilder.data.properties.BooleanProperty {default: true,
@@ -119,10 +119,10 @@ Children:
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Requires, type: Subsystem, validators: null, value: Drive}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id003 []
+        default: []
         name: Parameter presets
         validators: null
-        value: *id003
+        value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command
