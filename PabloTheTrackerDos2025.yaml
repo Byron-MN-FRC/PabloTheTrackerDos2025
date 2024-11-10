@@ -14,9 +14,9 @@ Children:
             default: '2'
             name: CAN ID
             validators: &id002 [CANID]
-            value: '7'
-        Base: Talon SRX
-        Name: right
+            value: '5'
+        Base: Talon FX6
+        Name: left
       - Children: []
         Properties:
           CAN ID: !!robotbuilder.data.properties.ChoicesProperty
@@ -24,9 +24,9 @@ Children:
             default: '2'
             name: CAN ID
             validators: *id002
-            value: '5'
-        Base: Talon SRX
-        Name: left
+            value: '7'
+        Base: Talon FX6
+        Name: right
       Properties:
         Right Motor: !!robotbuilder.data.properties.ChildSelectionProperty
           default: 1
@@ -119,10 +119,10 @@ Children:
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Requires, type: Subsystem, validators: null, value: Drive}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id003 []
+        default: []
         name: Parameter presets
         validators: null
-        value: *id003
+        value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command
