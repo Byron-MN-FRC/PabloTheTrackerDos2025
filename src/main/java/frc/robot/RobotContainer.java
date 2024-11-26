@@ -114,6 +114,9 @@ public class RobotContainer {
     characterizatiController.y().whileTrue(m_drive.sysIdDynamic(SysIdRoutine.Direction.kForward));
     characterizatiController.a().whileTrue(m_drive.sysIdDynamic(SysIdRoutine.Direction.kReverse));
 
+    characterizatiController.leftBumper().onTrue(Commands.runOnce(SignalLogger::start));
+    characterizatiController.rightBumper().onTrue(Commands.runOnce(SignalLogger::stop));
+
     // option to set logger control to buttons if it doesn't work well in teleop init/disabled
     // characterizatiController.leftBumper().onTrue(Commands.runOnce(SignalLogger::start));
     // characterizatiController.rightBumper().onTrue(Commands.runOnce(SignalLogger::stop));

@@ -141,11 +141,11 @@ Properties:
     validators: null
     value: []
   Java Package: !!robotbuilder.data.properties.StringProperty {default: frc.robot,
-    name: Java Package, validators: null, value: org.usfirst.frc4959}
+    name: Java Package, validators: null, value: org.usfirst.frc4859}
   Use Default Java Package: !!robotbuilder.data.properties.BooleanProperty {default: true,
     name: Use Default Java Package, validators: null, value: true}
   Team Number: !!robotbuilder.data.properties.TeamNumberProperty {default: 0, name: Team
-      Number, validators: null, value: 4959}
+      Number, validators: null, value: 4859}
   Export Subsystems: !!robotbuilder.data.properties.BooleanProperty {default: true,
     name: Export Subsystems, validators: null, value: true}
   Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\robotics\',
