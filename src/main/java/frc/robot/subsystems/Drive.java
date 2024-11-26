@@ -85,10 +85,6 @@ tankDrive.setMaxOutput(1.0);
         tankDrive.tankDrive(-controller.getLeftY(), -controller.getRightY());
     }
 
-    public void setDefaultCommand(frc.robot.commands.driveWithController driveWithController) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setDefaultCommand'");
-    }
-
+ 
 }
 
